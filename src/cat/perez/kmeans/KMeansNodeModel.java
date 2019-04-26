@@ -55,8 +55,8 @@ public class KMeansNodeModel extends NodeModel {
     
     static final Integer DEFAULT_MAX_ITERATION = 1000000;
 
-    private final SettingsModelIntegerBounded m_cluster_amount =
-    		new SettingsModelIntegerBounded(CFGKEY_CLUSTER_AMOUNT, DEFAULT_CLUSTER_AMOUNT, 0, 10);
+    private final SettingsModelInteger m_cluster_amount =
+    		new SettingsModelInteger(CFGKEY_CLUSTER_AMOUNT, DEFAULT_CLUSTER_AMOUNT);
     private final SettingsModelInteger m_max_iterations = 
     		new SettingsModelInteger(CFGKEY_MAX_ITERATION, DEFAULT_MAX_ITERATION);
     private DataTableSpec dataOutputSpec;
