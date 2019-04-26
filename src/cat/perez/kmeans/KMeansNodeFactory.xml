@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./default.png" type="Learner" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+    <name>KMeans</name>
+    
+    <shortDescription>Hola que tal somos Vicent i Unai</shortDescription><fullDescription>
+        <intro>Insert long description here...</intro>
+        
+        
+        <option name="short name of first option (like in the dialog)">description of first option</option>
+        <option name="short name of second option (like in the dialog)">description of second option</option>
+        <!-- possibly more options that can also be grouped by tabs -->
+        <!--
+        <tab name="Standard Options">
+            <option name="short name of first option (like in the dialog)">description of first option</option>
+            <option name="short name of second option (like in the dialog)">description of second option</option>
+        </tab>
+        <tab name="Advanced Options">
+            <option name="short name of first advanced option (like in the dialog)">description of first advanced option</option>
+        </tab>
+        -->
+    </fullDescription>
+    
+    
+    
+    <ports>
+        <inPort index="0" name="Input dataset">The dataset in the form of a table to which apply k-means. All columns must be real numerical values.</inPort>
+        <!-- possibly more input ports here-->
+        <outPort index="0" name="Classified observations">The dataset table as it was input, but with a new column added to it, defining the cluster to which each row has been assigned.</outPort>
+        <outPort index="1" name="Centroid coordinates">The coordinates of the calculated centroids.</outPort>
+        <!-- possibly more output ports here-->
+    </ports>
+</knimeNode>
